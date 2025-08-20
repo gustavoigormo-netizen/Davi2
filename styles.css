@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root{
+  --primary:#223765;
+  --success:#10B981;
+  --danger:#EF4444;
+  --muted:#6B7280;
+  --bg:#FFFFFF;
+  --bg-2:#F3F4F6;
+}
+
+html,body,[data-testid],.stMarkdown,.stText,.stButton,.stDataFrame{
+  font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif!important;
+  -webkit-font-smoothing:antialiased;
+}
+
+.stButton>button{
+  background:var(--primary)!important;color:#fff!important;border:none!important;
+  border-radius:10px!important;font-weight:600!important;
+}
+.stButton>button:hover{filter:brightness(.98);}
+
+[data-testid="stMetricValue"]{color:var(--primary);font-weight:700;}
+[data-testid="stDataFrame"] div[role="table"]{overflow-x:auto;}
+
+@media (max-width:640px){
+  .block-container{padding:.5rem!important;}
+  .stButton>button,.stTextInput input,.stNumberInput input,.stDateInput input{min-height:44px!important;}
+}
