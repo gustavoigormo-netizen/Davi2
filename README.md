@@ -1,1 +1,6 @@
-# Davi2
+# Davi2[requirements.txt](https://github.com/user-attachments/files/21880638/requirements.txt)
+streamlit==1.36.0
+sqlalchemy==2.0.31
+pandas==2.2.2
+matplotlib==3.8.4
+babel==2.15.0
